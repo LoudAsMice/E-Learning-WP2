@@ -82,7 +82,7 @@
                         <td><?= $i++;?></td>
                         <td><?= $r['username'];?></td>
                         <td><?= $r['role'];?></td>
-                        <td><?= $r['tanggal_input'];?></td>
+                        <td><?= date('d-m-Y H:i:s', $r['tanggal_input']);?></td>
                         <td>
                             <a href="<?= base_url('admin/aktif').'/'.$r['username'];?>" class="badge badge-success">Activate</a>
                         </td>
