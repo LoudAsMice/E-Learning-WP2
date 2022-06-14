@@ -784,3 +784,23 @@ CRITICAL - 2022-06-14 06:30:48 --> prodi is not a valid rule.
 #8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+CRITICAL - 2022-06-14 07:43:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Controllers\Kuliah.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Kuliah->materi()
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kuliah))
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 07:43:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\templates\sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(34): view('templates/sideb...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
