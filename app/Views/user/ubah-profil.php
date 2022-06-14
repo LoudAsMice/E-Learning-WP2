@@ -71,6 +71,20 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tempat" name="tempat" value="<?= $mhs['tempatlahir'];?>">
+                        <small class="text-danger pl-1"><?= $validation->getError('tempat');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $mhs['tanggallahir'];?>">
+                        <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label for="nama" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="email" name="email" value="<?= $mhs['email'];?>">
@@ -125,3 +139,10 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+        $(function() {
+            $('#datepicker').datepicker();
+        });
+    </script>
+

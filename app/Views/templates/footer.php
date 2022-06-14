@@ -10,7 +10,6 @@
 
 </div>
     <!-- End of Content Wrapper -->
-
 </div>
 <!-- End of Page Wrapper -->
 
@@ -49,23 +48,15 @@
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets');?>/js/sb-admin-2.min.js"></script>
 
-<script>
-    $('.custom-file-input').on('change', function(){
-        let filename = $(this).val().split('\\').pop();
-        $(this).next('.custom-file-label').addClass("selected").html(filename);
-    });
+<script src="<?= base_url('assets')?>/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url('assets');?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-    $(document).ready(function() {
-        $("#table-datatable").DataTable();
-    });
-    $('.alert-message').alert().delay(3500).slideUp('slow');
-</script>
-<script>
-    $(document).ready( function () {
-    $('#mytable').DataTable();
+    <script>
+        $(document).ready( function () {
+    $('#dataTable').DataTable();
 } );
-</script>
-
+    </script>
 </body>
 
+    
 </html>

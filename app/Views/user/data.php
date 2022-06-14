@@ -6,7 +6,8 @@
             <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
             <!-- if mahasiswa -->
             <?php if($uri->getSegment(2) == 'mahasiswa') {?>
-            <table class="table table-hover" id="mytable">
+            <div class="table-responsive">
+            <table class="table table-hover" id="dataTable">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
@@ -39,11 +40,13 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
             <?php }?>
             <!-- if dosen -->
             <?php if($uri->getSegment(2) == 'dosen') {?>
-            <table class="table table-hover">
-                <thead>
+            <div class="table-responsive">
+            <table class="table table-hover" id="dataTable">
+                <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col">Nama</th>
@@ -71,9 +74,11 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
             <?php }?>
             <?php if($uri->getSegment(2) == 'admin') {?>
-            <table class="table table-hover">
+            <div class="table-responsive">
+            <table class="table table-hover" id="dataTable">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
@@ -98,6 +103,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
             <?php }?>
         </div>
     </div>

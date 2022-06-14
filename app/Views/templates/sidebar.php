@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('user')?>">
@@ -29,12 +29,12 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Pilih:</h6>
-                <a class="collapse-item" href="<?= base_url('dosen/materi')?>">Upload Materi</a>
-                <a class="collapse-item" href="<?= base_url('dosen/tugas')?>">Upload Tugas</a>
-                <a class="collapse-item" href="<?= base_url('dosen/nilai')?>">Nilai Mahasiswa</a>
-                <a class="collapse-item" href="<?= base_url('dosen/semua')?>">Semua Nilai Mahasiswa</a>
+            <div class="bg-gray-800 py-2 collapse-inner rounded">
+                <h6 class="collapse-header text-light">Pilih:</h6>
+                <a class="collapse-item text-light" href="<?= base_url('dosen/materi')?>">Upload Materi</a>
+                <a class="collapse-item text-light" href="<?= base_url('dosen/tugas')?>">Upload Tugas</a>
+                <a class="collapse-item text-light" href="<?= base_url('dosen/nilai')?>">Nilai Mahasiswa</a>
+                <a class="collapse-item text-light" href="<?= base_url('dosen/semua')?>">Semua Nilai Mahasiswa</a>
             </div>
         </div>
     </li>
@@ -48,11 +48,11 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Pilih:</h6>
-                <a class="collapse-item" href="<?= base_url('kuliah')?>">Materi</a>
-                <a class="collapse-item" href="<?= base_url('kuliah/tugas')?>">Tugas</a>
-                <a class="collapse-item" href="<?= base_url('kuliah/nilai')?>">Nilai Tugas</a>
+            <div class="bg-gray-800 py-2 collapse-inner rounded">
+                <h6 class="collapse-header text-light">Pilih:</h6>
+                <a class="collapse-item text-light" href="<?= base_url('kuliah')?>">Materi</a>
+                <a class="collapse-item text-light" href="<?= base_url('kuliah/tugas')?>">Tugas</a>
+                <a class="collapse-item text-light" href="<?= base_url('kuliah/nilai')?>">Nilai Tugas</a>
             </div>
         </div>
     </li>
@@ -66,11 +66,11 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Pilih:</h6>
-                <a class="collapse-item" href="<?= base_url('user/admin')?>">Admin</a>
-                <a class="collapse-item" href="<?= base_url('user/dosen')?>">Dosen</a>
-                <a class="collapse-item" href="<?= base_url('user/mahasiswa')?>">Mahasiswa</a>
+            <div class="bg-gray-800 py-2 collapse-inner rounded">
+                <h6 class="collapse-header text-light">Pilih:</h6>
+                <a class="collapse-item text-light" href="<?= base_url('user/admin')?>">Admin</a>
+                <a class="collapse-item text-light" href="<?= base_url('user/dosen')?>">Dosen</a>
+                <a class="collapse-item text-light" href="<?= base_url('user/mahasiswa')?>">Mahasiswa</a>
             </div>
         </div>
     </li>

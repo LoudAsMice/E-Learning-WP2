@@ -87,7 +87,7 @@ class Dosen extends BaseController
         $modelkuliah = new ModelKuliah();
         $uri = service('uri');
         $data['validation'] = \Config\Services::validation();
-        $data['judul'] = 'Ubah Data Mahasiswa';
+        $data['judul'] = 'Ubah Materi';
         $data['user'] = $modeluser->cekData(['username' => session('username')])->getRowArray();
         $data['materi'] = $modelkuliah->getMateri(['id' => $uri->getSegment(3)])->getRowArray();
 

@@ -63,8 +63,8 @@
             <?= session()->getFlashdata('pesan');?>
             <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
             <!-- if mahasiswa -->
-
-            <table class="table table-hover">
+            <div class="table-responsive">
+            <table class="table table-hover" id="dataTable">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
@@ -90,7 +90,7 @@
                     <?php }?>
                 </tbody>
             </table>
-
+            </div>
         </div>
     </div>
 </div>

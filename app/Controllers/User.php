@@ -202,6 +202,8 @@ class User extends BaseController
             $data = [
                 'nama' => $_POST['nama'],
                 'email' => $_POST['email'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
                 'alamat' => $_POST['alamat']
             ];
             
@@ -241,9 +243,13 @@ class User extends BaseController
         if(session('role_id') == 3){
             $data = [
                 'nama' => $_POST['nama'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
                 'email' => $_POST['email'],
                 'alamat' => $_POST['alamat']
             ];
+
+            var_dump(date('d m Y H:i:s', '1655269200'));
             
             
             if($this->request->getFile('image')){

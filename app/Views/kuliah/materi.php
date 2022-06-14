@@ -5,8 +5,9 @@
             <?= session()->getFlashdata('pesan');?>
             <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
             <!-- if mahasiswa -->
-            <table class="table table-hover" id="mytable">
-                <thead>
+            <div class="table-responsive">
+            <table class="table table-hover table-stripped table-primary" id="dataTable">
+                <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col">Matakuliah</th>
@@ -33,6 +34,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
     </div>
 </div>

@@ -8,6 +8,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('autentifikasi');
+        return redirect()->to('autentifikasi');
     }
 }
