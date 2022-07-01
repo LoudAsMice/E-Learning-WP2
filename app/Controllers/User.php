@@ -23,11 +23,13 @@ class User extends BaseController
 
     public function index()
     {
+        $db = \Config\Database::connect();
         $modeluser = new ModelUser();
         $data['judul'] = 'Profil Saya';
         $data['user'] = $modeluser->cekData(['username' => session('username')])->getRowArray();
         $data['mahasiswa'] = $modeluser->joinMahasiswa(['username' => session('username')])->getRowArray();
         $data['dosen'] = $modeluser->joinDosen(['username' => session('username')])->getRowArray();
+        $data['role'] = $db->table('user')->join('role', 'user.role_id = role.id')->where(['username' => session('username')])->get()->getRowArray();
 
         if(!cek_login()){
             echo view('templates/header', $data);
@@ -145,12 +147,101 @@ class User extends BaseController
             $r = $img->getRandomName();
             $data = [
                 'nama' => $_POST['nama'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
                 'email' => $_POST['email'],
                 'fakultas' => $_POST['fakultas'],
                 'prodi' => $_POST['prodi'],
                 'alamat' => $_POST['alamat'],
             ];
             $modeluser->updateMhs($data, $uri->getSegment(3));
+            if($this->validate($validationRule)){
+                if($old != 'default.jpg'){
+                    unlink('assets/img/profile'.'/'.$old);
+                }
+                $img->move('./assets/img/profile/', $r);
+                $db->table('user')->set('image', $r)->where('username', $uri->getSegment(3))->update();
+                session()->setFlashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Berhasil Diubah </div>');
+                return redirect()->back();
+            }elseif($img == ''){
+                session()->setFlashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Berhasil Diubah </div>');
+                return redirect()->back();
+            }else{
+                session()->setFlashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Format tidak sesuai! </div>');
+                return redirect()->back();
+            }
+        }
+    }
+
+    public function ubahdosen()
+    {
+        if(cek_login()){
+            return redirect()->to('autentifikasi/gagal');
+        }
+
+        $modeluser = new ModelUser();
+        $uri = service('uri');
+        $data['validation'] = \Config\Services::validation();
+        $data['judul'] = 'Ubah Data Dosen';
+        $data['user'] = $modeluser->cekData(['username' => session('username')])->getRowArray();
+        $data['join'] = $modeluser->joinDosen(['nip' => $uri->getSegment(3)])->getRowArray();
+
+        if(!$this->request->getPost()){
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('templates/topbar', $data);
+        echo view('user/ubahdosen', $data);
+        echo view('templates/footer');
+        } else {
+            return $this->_cekdosen();
+        }
+    }
+
+    private function _cekdosen()
+    {
+        $modeluser = new ModelUser();
+        $uri = service('uri');
+        $user = $modeluser->getUserWhere(['username' => $uri->getSegment(3)])->get()->getRowArray();
+        $db = \Config\Database::connect();
+        $rules = [
+            'nama' => 'required',
+            'email' => 'required|valid_email'
+        ];
+        
+        $messages=[
+            'nama' =>[
+                'required' => 'Nama Harus diisi',
+            ],
+            'email' => [
+                'required' => 'Email Harus diisi'
+            ]
+        ];
+
+        $validationRule = [
+            'image' => [
+                'rules' => 'uploaded[image]'
+                    . '|is_image[image]'
+                    . '|mime_in[image,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
+            ],
+        ];
+
+        if(!$this->validate($rules,$messages)){
+            session()->setFlashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Ubah data gagal!</div>');
+            return redirect()->back()->withInput();
+        } else {
+            $img = $this->request->getFile('image');
+            $old = $user['image'];
+            $r = $img->getRandomName();
+            $data = [
+                'nama' => $_POST['nama'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
+                'email' => $_POST['email'],
+                'alamat' => $_POST['alamat'],
+            ];
+            $modeluser->updateDosen($data, $uri->getSegment(3));
             if($this->validate($validationRule)){
                 if($old != 'default.jpg'){
                     unlink('assets/img/profile'.'/'.$old);
@@ -204,6 +295,7 @@ class User extends BaseController
                 'email' => $_POST['email'],
                 'tempatlahir' => $_POST['tempat'],
                 'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
                 'alamat' => $_POST['alamat']
             ];
             
@@ -245,13 +337,11 @@ class User extends BaseController
                 'nama' => $_POST['nama'],
                 'tempatlahir' => $_POST['tempat'],
                 'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
                 'email' => $_POST['email'],
                 'alamat' => $_POST['alamat']
             ];
 
-            var_dump(date('d m Y H:i:s', '1655269200'));
-            
-            
             if($this->request->getFile('image')){
                 $img = $this->request->getFile('image');
                 $r = $img->getRandomName();
@@ -283,5 +373,15 @@ class User extends BaseController
             session()->setFlashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Data Berhasil diubah! </div>');
             return redirect()->to('user');
         }
+    }
+
+    public function hapusmahasiswa()
+    {
+        $db = \Config\Database::connect();
+        $uri = service('uri');
+        // $id = $db->table('user')->getWhere(['username' => $uri->getSegment(3)])->getRowArray();
+        $db->table('user')->where(['username' => $uri->getSegment(3)])->delete();
+        $db->table('mahasiswa')->where(['nim' => $uri->getSegment(3)])->delete();
+        return redirect()->to('admin');
     }
 }

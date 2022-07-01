@@ -45,4 +45,12 @@ class Admin extends BaseController
         $db->table('user')->set('is_active', 1)->where('username',$uri->getSegment(3))->update();
         return redirect()->to('admin');
     }
+
+    public function hapus()
+    {
+        $db = \Config\Database::connect();
+        $uri = service('uri');
+        $db->table('user')->where('username',$uri->getSegment(3))->delete();
+        return redirect()->to('admin');
+    }
 }

@@ -4,7 +4,7 @@
         <div class="col-lg-12">
             <?= session()->getFlashdata('pesan');?>
             <div class="table-responsive">
-            <table class="table table-hover table-danger" id="dataTable">
+            <table class="table table-hover table-danger table-stripped table-responsive" id="dataTable">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
@@ -14,8 +14,7 @@
                         <th scope="col">Nama</th>
                         <th scope="col">Judul</th>
                         <th scope="col">Link Tugas</th>
-                        <th scope="col">Komentar</th>
-                        <th scope="col">Nilai</th>
+                        <th scope="col">Created</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -31,8 +30,7 @@
                         <td><?= $n['nama'];?></td>
                         <td><?= $n['judul'];?></td>
                         <td><?= $n['link'];?></td>
-                        <td><?= $n['komentar'];?></td>
-                        <td><?= $n['nilai'];?></td>
+                        <td><?= date('d-m-Y H:i:s',$n['created']);?></td>
                         <td>
                         <a href="<?= base_url('dosen/send').'/'.$n['id'];?>" class="btn btn-success">Input Nilai</a>
                         </td>

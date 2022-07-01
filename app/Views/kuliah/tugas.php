@@ -3,10 +3,7 @@
     <div class="row">
         <div class="col-lg-12">
             <?= session()->getFlashdata('pesan');?>
-            <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
-            <!-- if mahasiswa -->
-            <div class="table-responsive">
-            <table class="table table-hover table-stripped table-warning" id="dataTable">
+            <table class="table table-hover table-warning table-stripped table-responsive" id="dataTable">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
@@ -16,6 +13,7 @@
                         <th scope="col">Judul</th>
                         <th scope="col">Deskripsi</th>
                         <th scope="col">Link Tugas</th>
+                        <th scope="col">Tanggal</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -31,6 +29,7 @@
                         <td><?= $m['judul'];?></td>
                         <td><?= $m['deskripsi'];?></td>
                         <td><?= $m['link'];?></td>
+                        <td><?= date('d-m-Y H:i:s', $m['tanggal']);?></td>
                         <td>
                             <a href="<?= base_url('kuliah/send').'/'.$m['id'];?>" class="btn btn-success">Kerjakan</a>
                         </td>
@@ -38,7 +37,6 @@
                     </tr>
                 </tbody>
             </table>
-            </div>
         </div>
     </div>
 </div>

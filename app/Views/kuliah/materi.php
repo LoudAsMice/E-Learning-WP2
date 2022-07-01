@@ -3,10 +3,8 @@
     <div class="row">
         <div class="col-lg-12">
             <?= session()->getFlashdata('pesan');?>
-            <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
-            <!-- if mahasiswa -->
             <div class="table-responsive">
-            <table class="table table-hover table-stripped table-primary" id="dataTable">
+            <table class="table table-hover table-primary table-stripped" id="dataTable">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>

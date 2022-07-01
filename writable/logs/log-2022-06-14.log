@@ -814,3 +814,256 @@ CRITICAL - 2022-06-14 08:31:16 --> Invalid file: autentifikasi.php
 #6 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2022-06-14 20:16:35 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubah-profil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubah-profi...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(189): view('user/ubah-profi...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahprofil()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 20:18:30 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubah-profil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubah-profi...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(189): view('user/ubah-profi...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahprofil()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 20:18:33 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubah-profil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubah-profi...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(189): view('user/ubah-profi...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahprofil()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 20:18:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubah-profil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubah-profi...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(189): view('user/ubah-profi...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahprofil()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 20:53:28 --> Undefined variable $mhs
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubahmahasiswa.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubahmahasi...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(107): view('user/ubahmahasi...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahmahasiswa('15200318')
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-06-14 20:59:13 --> Unknown column 'nim' in 'where clause'
+CRITICAL - 2022-06-14 20:59:13 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen('100')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-06-14 20:59:22 --> Unknown column 'nim' in 'where clause'
+CRITICAL - 2022-06-14 20:59:22 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen('100')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-06-14 20:59:46 --> Unknown column 'nim' in 'where clause'
+CRITICAL - 2022-06-14 20:59:46 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen('100')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-06-14 20:59:49 --> Unknown column 'nim' in 'where clause'
+CRITICAL - 2022-06-14 20:59:49 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen()
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-14 21:01:33 --> Undefined variable $dosen
+#0 C:\xampp\htdocs\projectweb2\app\Views\user\ubahdosen.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('user/ubahdosen', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(194): view('user/ubahdosen', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen('100')
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 21:03:27 --> Undefined array key "fakultas"
+#0 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 154)
+#1 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(197): App\Controllers\User->_cekmhs()
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->ubahdosen('100')
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-06-14 21:04:46 --> syntax error, unexpected token "public"
+#0 C:\xampp\htdocs\projectweb2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/user/ubahdosen...')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/user/ubahdosen...')
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 21:04:49 --> syntax error, unexpected token "public"
+#0 C:\xampp\htdocs\projectweb2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/user/ubahdosen...')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/user/ubahdosen...')
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 21:04:54 --> syntax error, unexpected token "public"
+#0 C:\xampp\htdocs\projectweb2\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/user/dosen')
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('/user/dosen')
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 21:38:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\dosen\ubahmateri.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('dosen/ubahmater...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Dosen.php(98): view('dosen/ubahmater...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Dosen->ubahmateri('1')
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 21:38:34 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\dosen\ubahmateri.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('dosen/ubahmater...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Dosen.php(98): view('dosen/ubahmater...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Dosen->ubahmateri('1')
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 21:57:55 --> Undefined array key "tanggal"
+#0 C:\xampp\htdocs\projectweb2\app\Views\kuliah\nilai.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('kuliah/nilai', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Kuliah.php(108): view('kuliah/nilai', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Kuliah->nilai()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kuliah))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 22:28:06 --> Undefined variable $dosen
+#0 C:\xampp\htdocs\projectweb2\app\Views\autentifikasi\registrasi.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('autentifikasi/r...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Autentifikasi.php(118): view('autentifikasi/r...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Autentifikasi->registrasi()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentifikasi))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 22:28:27 --> Undefined variable $dosen
+#0 C:\xampp\htdocs\projectweb2\app\Views\autentifikasi\registrasi.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('autentifikasi/r...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Autentifikasi.php(118): view('autentifikasi/r...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Autentifikasi->registrasi()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autentifikasi))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 23:46:10 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\templates\sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Kuliah.php(106): view('templates/sideb...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Kuliah->nilai()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kuliah))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 23:46:16 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\templates\sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\User.php(36): view('templates/sideb...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 23:46:41 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Controllers\Kuliah.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Kuliah->tugas()
+#2 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kuliah))
+#3 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:47:11 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\templates\sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Kuliah.php(106): view('templates/sideb...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Kuliah->nilai()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kuliah))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-14 23:47:26 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\projectweb2\app\Views\templates\sidebar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\projectweb2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projectweb2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\projectweb2\system\Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#4 C:\xampp\htdocs\projectweb2\app\Controllers\Dosen.php(22): view('templates/sideb...', Array)
+#5 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(832): App\Controllers\Dosen->materi()
+#6 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\projectweb2\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projectweb2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\projectweb2\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

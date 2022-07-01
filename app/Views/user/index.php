@@ -13,6 +13,7 @@
         <div class="col-md 8">
             <div class="card-body">
                 <h5 class="card-title"><?= $dosen['nip'];?></h5>
+                <p class="card-text">Role : <?= $role['role'];?></p>
                 <p class="card-text"><?= $dosen['nama'];?></p>
                 <p class="card-text"><small class="text-muted">Jadi member sejak: <br><b><?= date('d F Y', $dosen['tanggal_input'])?></b></small></p>
             </div>
@@ -27,6 +28,7 @@
         <div class="col-md 8">
             <div class="card-body">
                 <h5 class="card-title"><?= $mahasiswa['nim'];?></h5>
+                <p class="card-text">Role : <?= $role['role'];?></p>
                 <p class="card-text"><?= $mahasiswa['nama'];?></p>
                 <p class="card-text"><small class="text-muted">Jadi member sejak: <br><b><?= date('d F Y', $mahasiswa['tanggal_input'])?></b></small></p>
             </div>

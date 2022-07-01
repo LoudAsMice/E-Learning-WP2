@@ -19,6 +19,39 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tempat" name="tempat" value="<?= $join['tempatlahir'];?>">
+                        <small class="text-danger pl-1"><?= $validation->getError('tempat');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $join['tanggallahir'];?>" placeholder="Format : 01 Januari 2000">
+                        <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                    <div class="col-sm-10">
+                        <select name="jkel" class="form-control">
+                            <?php if($join['jkel'] == null) {?>
+                                <option value="">--Pilih Jenis Kelamin--</option>
+                                <option value="Pria">Pria</option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($join['jkel'] == 'Pria') {?>
+                                <option value="<?= $join['jkel'];?>"><?= $join['jkel'];?></option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($join['jkel'] == 'Wanita') {?>
+                                <option value="<?= $join['jkel'];?>"><?= $join['jkel'];?></option>
+                                <option value="Pria">Pria</option>
+                            <?php }?>
+                        </select>
+                        <small class="text-danger pl-1"><?= $validation->getError('jkel');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="email" name="email" value="<?= $join['email'];?>">
@@ -48,6 +81,7 @@
                                 <option value="Teknik dan Informatika">Teknik dan Informatika</option>
                                 <option value="Komunikasi dan Bahasa">Komunikasi dan Bahasa</option><?php }?>
                         </select>
+                        <small class="text-danger pl-3"><?= $validation->getError('fakultas');?></small>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -75,13 +109,14 @@
                                 <option value="Ilmu Ekonomi">Ilmu Komunikasi</option>
                             <?php }?>
                         </select>
+                        <small class="text-danger pl-3"><?= $validation->getError('prodi');?></small>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nama" class="col-sm-2 col-form-label">Alamat</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="alamat" name="alamat" value="<?= $join['alamat'];?>">
-
+                        <small class="text-danger pl-3"><?= $validation->getError('alamat');?></small>
                     </div>
                 </div>
                 <div class="form-group row">

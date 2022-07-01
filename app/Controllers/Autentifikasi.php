@@ -132,6 +132,9 @@ class Autentifikasi extends BaseController
             'username' => 'required|numeric|is_unique[user.username]',
             'email' => 'required|trim|valid_email|is_unique[mahasiswa.email]|is_unique[dosen.email]',
             'role' => 'required',
+            'tempat' => 'required',
+            'tanggal' => 'required',
+            'jkel' => 'required',
             'password1' => 'required|trim|min_length[3]|matches[password2]',
             'password2' => 'required|trim|matches[password1]'
         ];
@@ -152,6 +155,15 @@ class Autentifikasi extends BaseController
             ],
             'role' => [
                 'required' => 'Pilih Role'
+            ],
+            'tempat' => [
+                'required' => 'Tempat lahir harus diisi'
+            ],
+            'tanggal' => [
+                'required' => 'Tanggal lahir harus diisi'
+            ],
+            'jkel' => [
+                'required' => 'Jenis Kelamin harus diisi',
             ],
             'password1' => [
                 'required' => 'Password Harus Diisi',
@@ -177,6 +189,9 @@ class Autentifikasi extends BaseController
             $mhs = [
                 'nim' => $_POST['username'],
                 'nama' => $_POST['nama'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
                 'email' => $_POST['email'],
                 'fakultas' => $_POST['fakultas'],
                 'prodi' => $_POST['prodi'],
@@ -185,6 +200,9 @@ class Autentifikasi extends BaseController
             $dosen = [
                 'nip' => $_POST['username'],
                 'nama' => $_POST['nama'],
+                'tempatlahir' => $_POST['tempat'],
+                'tanggallahir' => $_POST['tanggal'],
+                'jkel' => $_POST['jkel'],
                 'email' => $_POST['email']
             ];
 

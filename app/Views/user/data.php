@@ -7,8 +7,8 @@
             <!-- if mahasiswa -->
             <?php if($uri->getSegment(2) == 'mahasiswa') {?>
             <div class="table-responsive">
-            <table class="table table-hover" id="dataTable">
-                <thead>
+            <table class="table table-hover table-primary table-stripped" id="dataTable">
+                <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col">Nama</th>
@@ -45,7 +45,7 @@
             <!-- if dosen -->
             <?php if($uri->getSegment(2) == 'dosen') {?>
             <div class="table-responsive">
-            <table class="table table-hover" id="dataTable">
+            <table class="table table-hover table-primary table-stripped" id="dataTable">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
@@ -78,8 +78,8 @@
             <?php }?>
             <?php if($uri->getSegment(2) == 'admin') {?>
             <div class="table-responsive">
-            <table class="table table-hover" id="dataTable">
-                <thead>
+            <table class="table table-hover table-primary table-stripped" id="dataTable">
+                <thead class="thead-dark">
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col">Username</th>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2022 at 02:19 PM
+-- Generation Time: Jun 15, 2022 at 06:30 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -30,6 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `dosen` (
   `nip` int(20) NOT NULL,
   `nama` varchar(100) NOT NULL,
+  `tempatlahir` varchar(100) NOT NULL,
+  `tanggallahir` varchar(100) NOT NULL,
+  `jkel` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `alamat` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -43,6 +46,9 @@ CREATE TABLE `dosen` (
 CREATE TABLE `mahasiswa` (
   `nim` int(20) NOT NULL,
   `nama` varchar(50) NOT NULL,
+  `tempatlahir` varchar(100) NOT NULL,
+  `tanggallahir` varchar(100) NOT NULL,
+  `jkel` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `fakultas` varchar(50) NOT NULL,
   `prodi` varchar(50) NOT NULL,
@@ -84,7 +90,8 @@ CREATE TABLE `nilai` (
   `komentar` varchar(100) NOT NULL,
   `nilai` int(10) NOT NULL,
   `is_nilai` int(10) NOT NULL DEFAULT 0,
-  `tanggal` int(20) NOT NULL
+  `created` int(20) NOT NULL,
+  `updated` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -203,13 +210,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `materi`
 --
 ALTER TABLE `materi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `nilai`
 --
 ALTER TABLE `nilai`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `role`
@@ -221,13 +228,13 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT for table `tugas`
 --
 ALTER TABLE `tugas`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

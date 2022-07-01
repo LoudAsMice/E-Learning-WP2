@@ -8,6 +8,7 @@
                     <label for="email" class="col-sm-2 col-form-label">NIP</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="nip" name="nip" value="<?= $dosen['nip'];?>" readonly>
+                        <small class="text-danger pl-1"><?= $validation->getError('nip');?></small>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -15,6 +16,39 @@
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="nama" name="nama" value="<?= $dosen['nama'];?>">
                         <small class="text-danger pl-1"><?= $validation->getError('nama');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tempat" name="tempat" value="<?= $dosen['tempatlahir'];?>">
+                        <small class="text-danger pl-1"><?= $validation->getError('tempat');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $dosen['tanggallahir'];?>" placeholder="Format : 01 Januari 2000">
+                        <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                    <div class="col-sm-10">
+                        <select name="jkel" class="form-control">
+                            <?php if($dosen['jkel'] == null) {?>
+                                <option value="">--Pilih Jenis Kelamin--</option>
+                                <option value="Pria">Pria</option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($dosen['jkel'] == 'Pria') {?>
+                                <option value="<?= $dosen['jkel'];?>"><?= $dosen['jkel'];?></option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($dosen['jkel'] == 'Wanita') {?>
+                                <option value="<?= $dosen['jkel'];?>"><?= $dosen['jkel'];?></option>
+                                <option value="Pria">Pria</option>
+                            <?php }?>
+                        </select>
+                        <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -61,6 +95,7 @@
                     <label for="email" class="col-sm-2 col-form-label">NIM</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="nim" name="nim" value="<?= $mhs['nim'];?>" readonly>
+                        <small class="text-danger pl-1"><?= $validation->getError('nim');?></small>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -80,7 +115,26 @@
                 <div class="form-group row">
                     <label for="nama" class="col-sm-2 col-form-label">Tanggal Lahir</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $mhs['tanggallahir'];?>">
+                        <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $mhs['tanggallahir'];?>" placeholder="Format : 01 Januari 2000">
+                        <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                    <div class="col-sm-10">
+                        <select name="jkel" class="form-control">
+                            <?php if($mhs['jkel'] == null) {?>
+                                <option value="">--Pilih Jenis Kelamin--</option>
+                                <option value="Pria">Pria</option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($mhs['jkel'] == 'Pria') {?>
+                                <option value="<?= $mhs['jkel'];?>"><?= $mhs['jkel'];?></option>
+                                <option value="Wanita">Wanita</option>
+                            <?php }elseif($mhs['jkel'] == 'Wanita') {?>
+                                <option value="<?= $mhs['jkel'];?>"><?= $mhs['jkel'];?></option>
+                                <option value="Pria">Pria</option>
+                            <?php }?>
+                        </select>
                         <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
                     </div>
                 </div>
@@ -140,9 +194,4 @@
     </div>
 </div>
 
-<script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker();
-        });
-    </script>
 

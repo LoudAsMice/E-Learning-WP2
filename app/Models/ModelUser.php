@@ -41,6 +41,11 @@ class ModelUser extends Model
         $this->db->table('mahasiswa')->set($data)->where('nim', $where)->update();
     }
 
+    public function updateDosen($data = null, $where = null)
+    {
+        $this->db->table('dosen')->set($data)->where('nip', $where)->update();
+    }
+
     public function cekUserAccess($where = null)
     {
         $db = \Config\Database::connect();

@@ -4,8 +4,7 @@
         <div class="col-lg-12">
             <?= session()->getFlashdata('pesan');?>
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#materiBaruModal"><i class="fas fa-file-alt"> Tambah Materi</i></a>
-            <div class="table-responsive">
-            <table class="table table-hover table-primary" id="dataTable">
+            <table class="table table-hover table-primary table-stripped table-responsive" id="dataTable">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -40,7 +39,6 @@
                     <?php }?>
                 </tbody>
             </table>
-            </div>
         </div>
     </div>
 </div>

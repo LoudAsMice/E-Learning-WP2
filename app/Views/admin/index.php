@@ -61,17 +61,15 @@
     <div class="row">
         <div class="col-lg-12">
             <?= session()->getFlashdata('pesan');?>
-            <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"> Buku Baru</i></a> -->
-            <!-- if mahasiswa -->
             <div class="table-responsive">
-            <table class="table table-hover" id="dataTable">
+            <table class="table table-hover table-primary table-stripped" id="dataTable">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col">Username</th>
                         <th scope="col">Role</th>
                         <th scope="col">Tanggal input</th>
-                        <th scope="col">Aktivasi</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -85,6 +83,7 @@
                         <td><?= date('d-m-Y H:i:s', $r['tanggal_input']);?></td>
                         <td>
                             <a href="<?= base_url('admin/aktif').'/'.$r['username'];?>" class="badge badge-success">Activate</a>
+                            <a href="<?= base_url('admin/hapus').'/'.$r['username'];?>" class="badge badge-danger">Delete</a>
                         </td>
                     </tr>
                     <?php }?>

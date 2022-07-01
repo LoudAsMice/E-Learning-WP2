@@ -16,6 +16,22 @@
                             <small class="text-danger pl-3"><?= $validation->getError('nama');?></small>
                         </div>
                         <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="tempat" name="tempat" placeholder="Tempat Lahir">
+                            <small class="text-danger pl-1"><?= $validation->getError('tempat');?></small>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="tanggal" name="tanggal" placeholder="Tanggal Lahir Format : 01 Januari 2000">
+                            <small class="text-danger pl-1"><?= $validation->getError('tanggal');?></small>
+                        </div>
+                        <div class="form-group">
+                        <select name="jkel" class="form-control">
+                                <option value="">--Pilih Jenis Kelamin--</option>
+                                <option value="Pria">Pria</option>
+                                <option value="Wanita">Wanita</option>
+                        </select>
+                        <small class="text-danger pl-1"><?= $validation->getError('jkel');?></small>
+                        </div>
+                        <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email">
                             <small class="text-danger pl-3"><?= $validation->getError('email');?></small>
                         </div>

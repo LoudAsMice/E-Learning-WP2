@@ -281,12 +281,51 @@ class Dosen extends BaseController
         $data = [
             'komentar' => $_POST['komentar'],
             'nilai' => $_POST['nilai'],
-            'is_nilai' => 1
+            'is_nilai' => 1,
+            'updated' => time()
         ];
 
         $db->table('nilai')->set($data)->where(['id' => $uri->getSegment(3)])->update();
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Send Nilai Berhasil!</div>');
         return redirect()->to('dosen/nilai');
+    }
+
+    public function ubahnilai()
+    {
+        $modeluser = new ModelUser();
+        $db = \Config\Database::connect();
+        $uri = service('uri');
+        $data['judul'] = 'Ubah Nilai';
+        $data['uri'] = service('uri');
+        $data['validation'] = \Config\Services::validation();
+        $data['nilai'] = $db->table('nilai')->getWhere(['id' => $uri->getSegment(3)])->getRowArray();
+        $data['user'] = $modeluser->cekData(['username' => session('username')])->getRowArray();
+
+        if(!$this->request->getPost()){
+            echo view('templates/header', $data);
+            echo view('templates/sidebar', $data);
+            echo view('templates/topbar', $data);
+            echo view('dosen/ubahnilai', $data);
+            echo view('templates/footer');
+        } else {
+            return $this->_ubahnilai();
+        }
+    }
+
+    private function _ubahnilai()
+    {
+        $db = \Config\Database::connect();
+        $uri = service('uri');
+        $data = [
+            'komentar' => $_POST['komentar'],
+            'nilai' => $_POST['nilai'],
+            'is_nilai' => 1,
+            'updated' => time()
+        ];
+
+        $db->table('nilai')->set($data)->where(['id' => $uri->getSegment(3)])->update();
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Ubah Nilai Berhasil!</div>');
+        return redirect()->to('dosen/semua');
     }
 
     public function semua()

@@ -85,7 +85,8 @@ class Kuliah extends BaseController
             'prodi' => $tugas['prodi'],
             'matakuliah' => $tugas['matakuliah'],
             'judul' => $tugas['judul'],
-            'tanggal' => time(),
+            'created' => $tugas['tanggal'],
+            'updated' => time(),
             'link' => $_POST['link']
         ];
 
